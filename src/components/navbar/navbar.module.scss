@@ -18,7 +18,8 @@
 
     img {
       transition: 0.3s;
-      width: 2vw;
+      width: 1.8vw;
+      border-radius: 10px;
     }
     p {
       font-size: 1vw;
@@ -45,7 +46,8 @@
     }
 
     .navSocialMedia {
-      margin-top: 17vw;
+      margin-top: 19vw;
+      transition: 0.3s;
       a {
         font-size: 1vw;
       }

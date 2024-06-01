@@ -1,4 +1,4 @@
-import progress from "./progressBar.module.scss";
+import progress from "./skills.module.scss";
 import { FaGitSquare } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
@@ -14,25 +14,28 @@ import { BiLogoTypescript } from "react-icons/bi";
 interface Skill {
     name: string;
     percent: number;
+    Icon: React.ComponentType<any>
 }
 
 function Skills() {
     const mainSkills = [
-        { name: "Node.js", percent: 80 },
-        { name: "HTML5", percent: 85 },
-        { name: "TypeScript", percent: 80 },
-        { name: "JavaScript", percent: 85 },
-        { name: "React", percent: 85 },
-        { name: "CSS", percent: 70 }
+        { name: "Node.js", percent: 80, Icon: FaGitSquare },
+        { name: "HTML5", percent: 85, Icon: FaHtml5 },
+        { name: "TypeScript", percent: 80, Icon: BiLogoTypescript },
+        { name: "JavaScript", percent: 85, Icon: IoLogoJavascript },
+        { name: "React", percent: 85, Icon: FaReact },
+        { name: "CSS", percent: 70, Icon: FaCss3Alt }
     ];
 
     const smallerSkills = [
-        { name: "MongoDB", percent: 80 },
-        { name: "MySQL", percent: 60 },
-        { name: "Bootstrap", percent: 75 },
-        { name: "SASS", percent: 85 },
-        { name: "Express.js", percent: 85 },
-        { name: "Git", percent: 80 }
+        { name: "Mongo", percent: 80, Icon: SiMongodb },
+        { name: "MySQL", percent: 60, Icon: DiMysql },
+        { name: "Bootstrap", percent: 75, Icon: FaBootstrap },
+        { name: "SASS", percent: 85, Icon: RiTailwindCssFill },
+        { name: "Express.js", percent: 85, Icon: FaNpm },
+        { name: "Git", percent: 80, Icon: FaGitSquare },
+        { name: "Python", percent: 70, Icon: FaGitSquare },
+        { name: "NPM", percent: 90, Icon: FaGitSquare }
     ];
 
     const circleRadius = 100;

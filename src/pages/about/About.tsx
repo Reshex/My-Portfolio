@@ -11,15 +11,17 @@ function About() {
                 <div className={style.aboutContentAndSnapshot}>
                     <div className={style.aboutContent}>
                         <p>
-                            I am a dedicated full-stack developer driven by a fervent passion for crafting immersive digital experiences. My journey in software engineering is propelled by the ambition to transform concepts into tangible realities through code. Whether it involves sculpting intuitive user interfaces or architecting robust backend infrastructures, I embrace each new endeavor with enthusiasm.
+                            I'm a passionate full-stack developer with a love for creating engaging web experiences. My journey in the world of software development has been fueled by a desire to turn ideas into reality through code. Whether it's crafting intuitive user interfaces or building robust backend systems, I'm always excited to tackle new challenges.
                         </p>
                     </div>
                     <div className={style.aboutSnapshot}>
                         <p>
                             <p>Skills Snapshot:</p>
-                            👨‍💻 Frontend: I specialize in leveraging React.js, HTML5, CSS, and TypeScript to engineer captivating user interfaces that prioritize both aesthetics and usability.
-                            🔭 Backend: With a focus on Node.js and occasional forays into Python, I lay the groundwork for frontend functionality, from crafting efficient APIs to fine-tuning performance for scalable solutions.
-                            ⚡ Other Interests: Beyond coding, I am an ardent gymnast, dedicated to maintaining an active and healthy lifestyle. Additionally, I'm an enthusiastic gamer, always seeking new challenges in the virtual realm.
+                            👨‍💻 Frontend: I specialize in creating captivating user interfaces using React.js, HTML5, CSS, and TypeScript. I believe in designing websites and apps that not only look great but also provide a seamless user experience.
+                            <br />
+                            🔭 Backend: With Node.js and sometimes Python, I focus on building strong foundations to support frontend functionality. From crafting efficient APIs to optimizing performance, I'm dedicated to delivering scalable solutions.
+                            <br />
+                            ⚡ Other Interests: When I am not coding, I'm a passionate gymnast who loves staying active and healthy. I'm also an avid gamer, always up for a challenge in the virtual world.
                         </p>
                     </div>
                     <div className={water.stars}>
