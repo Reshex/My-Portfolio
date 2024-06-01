@@ -13,7 +13,6 @@ function ProjectsAndSkills() {
                 <div className={style.progressContainer}>
                     <Skills />
                 </div>
-
             </div>
         </div>
     )
