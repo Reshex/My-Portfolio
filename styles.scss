@@ -1,0 +1,19 @@
+html,
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  background-image: url("/src/assets/imgs/Futuristic_sci_fi_banner_background_with_modern_wireframe_terrain_design_2402.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#root {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
