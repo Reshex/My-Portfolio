@@ -13,14 +13,44 @@
     display: flex;
     justify-content: flex-start;
     align-content: center;
+    position: fixed;
     margin-top: 35vh;
-    
+
     h1 {
       font-size: 5vh;
       font-weight: 600;
       color: #fdfdfe;
       text-shadow: 0px 0px 5px #7664db, 0px 0px 10px #8b48cf, 0px 0px 10px #b393d3, 0px 0px 20px #b393d3;
       height: 50%;
+    }
+  }
+
+  .projects {
+    display: flex;
+
+    .project1 {
+      border-radius: 360px;
+      background-color: rgb(225, 0, 255);
+      height: 170px;
+      width: 170px;
+      margin-top: 23vh;
+      margin-right: 7.8vw;
+
+    }
+    .project2 {
+      border-radius: 360px;
+      background-color: rgb(238, 255, 0);
+      height: 170px;
+      width: 170px;
+      margin-top: 1vh;
+    }
+    .project3 {
+      border-radius: 360px;
+      background-color: rgb(0, 255, 157);
+      height: 170px;
+      width: 170px;
+      margin-top: 23vh;
+      margin-left: 7.8vw;
     }
   }
 
