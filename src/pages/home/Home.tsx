@@ -6,9 +6,9 @@ function Home() {
             <div className={style.homeWrapper}>
                 <div className={style.homeContainer}>
                     <div className={style.homeTitle}>
-                        <h1>Enter My Digital World</h1>
+                        <h1>Welcome To My Digital World</h1>
                         <p>Presenting Bar,</p>
-                        <p>Fullstack Software Developer</p>
+                        <p>A Fullstack Software Developer</p>
                     </div>
                     <div className={style.homeProjAndResume}>
                         <button>Check My Projects</button>
@@ -16,7 +16,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-
         </>
     )
 }

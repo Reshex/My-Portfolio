@@ -11,14 +11,12 @@
   }
 }
 
-
 .progress {
   position: relative;
   display: inline-block;
   padding: 0;
   text-align: center;
   width: 100%;
-  
 
   & > li {
     transition: 0.5s;
@@ -28,8 +26,6 @@
     color: #ffffff;
     font-weight: 500;
     margin: 1rem;
-
-    
 
     &:before {
       content: attr(data-name);
@@ -105,6 +101,4 @@
     font-size: 1rem;
   }
 }
-
-
 

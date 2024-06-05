@@ -27,7 +27,7 @@ function Skills() {
         { name: "MySQL", percent: 60, Icon: DiMysql },
         { name: "Bootstrap", percent: 75, Icon: FaBootstrap },
         { name: "SASS", percent: 85, Icon: RiTailwindCssFill },
-        { name: "Express.js", percent: 85, Icon: FaNpm },
+        { name: "Express", percent: 85, Icon: FaNpm },
         { name: "Git", percent: 80, Icon: FaGitSquare },
         { name: "Python", percent: 70, Icon: FaPython },
         { name: "NPM", percent: 90, Icon: FaNpm }
@@ -52,7 +52,7 @@ function Skills() {
                         <skill.Icon />
 
                     </svg>
-                    <svg viewBox="-10 -10 220 220">
+                    <svg className={skillsStyle.skillIconParent} viewBox="-10 -10 220 220">
                         <path
                             d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
                             style={{
