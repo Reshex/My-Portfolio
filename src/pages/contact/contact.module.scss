@@ -1,14 +1,54 @@
 .contactContainer {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("../../assets/imgs/wallpaperflare.com_wallpaper\ \(1\).jpg");
   background-size: cover;
   background-position: center;
-  height: 100%;
+  height: 100vh;
 
   .contactWrapper {
-    
-    .contactTitle {
+    margin-top: 55vh;
 
+    .contactTitle {
+      text-align: center;
+
+      h1 {
+        font-size: 11vh;
+        font-weight: 600;
+        color: #fdfdfe;
+        text-shadow: 0px 0px 5px #7664db, 0px 0px 10px #8b48cf, 0px 0px 10px #b393d3, 0px 0px 20px #b393d3;
+      }
+
+      p {
+        font-size: 3vh;
+        font-weight: 600;
+        color: #f1f1f1;
+        text-shadow: 0px 0px 5px #5c5af7, 0px 0px 10px #5052ee, 0px 0px 10px #477beb, 0px 0px 20px #b393d3;
+      }
+    }
+
+    .contactIcons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+
+      a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        margin-bottom: 1vw;
+        color: #fff;
+        font-size: 4vw;
+        transition: color 0.3s ease, transform 0.3s ease; /* Transition for color and transform */
+        margin: 0 10px;
+
+        &:hover {
+          color: #895eec; 
+          transform: scale(1.5); 
+        }
+      }
     }
   }
 }

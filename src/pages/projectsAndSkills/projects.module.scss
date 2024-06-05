@@ -1,6 +1,11 @@
 button {
   cursor: pointer;
-  background-image: linear-gradient(92.88deg, #5643cc 9.16%, #5643cc 43.89%, #455eb5 64.72%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(204, 67, 193, 1) 0%,
+    rgba(154, 67, 204, 0.8) 50%,
+    rgba(149, 69, 181, 0.6) 100%
+  );
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
@@ -15,19 +20,18 @@ button {
 }
 
 button:hover {
-  box-shadow: rgb(137, 86, 255) 0 1px 30px;
+  box-shadow: rgb(255, 254, 254) 0 1px 80px;
   transition-duration: 0.5s;
 }
 
 .projects {
-  border: solid red 2px;
   width: 38vw;
   height: 52vh;
 
   .project1 {
     position: relative;
     border-radius: 360px;
-    background-color: rgb(225, 0, 255);
+    background-color: rgb(255, 255, 252);
     height: 140px;
     width: 140px;
     top: 12vh;
@@ -35,7 +39,7 @@ button:hover {
   .project2 {
     position: relative;
     border-radius: 360px;
-    background-color: rgb(238, 255, 0);
+    background-color: rgb(21, 197, 250);
     height: 140px;
     width: 140px;
     left: 23vw;

@@ -1,6 +1,15 @@
+import { useNavigate } from "react-router-dom"
 import style from "../home/home.module.scss"
 
 function Home() {
+    const navigate = useNavigate()
+
+    function navigateProjects(event: React.MouseEvent<HTMLButtonElement>) {
+        if (event.target) {
+            navigate("/projectsAndSkills")
+        }
+    }
+
     return (
         <>
             <div className={style.homeWrapper}>
@@ -11,7 +20,7 @@ function Home() {
                         <p>A Fullstack Software Developer</p>
                     </div>
                     <div className={style.homeProjAndResume}>
-                        <button>Check My Projects</button>
+                        <button onClick={navigateProjects}>Check My Projects</button>
                         <button>Download My Resume</button>
                     </div>
                 </div>
