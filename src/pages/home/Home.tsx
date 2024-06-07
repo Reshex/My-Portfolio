@@ -16,7 +16,7 @@ function Home() {
                 <div className={style.homeContainer}>
                     <div className={style.homeTitle}>
                         <h1>Welcome To My Digital World</h1>
-                        <p>Presenting Bar,</p>
+                        <p>My Name Is Bar</p>
                         <p>A Fullstack Software Developer</p>
                     </div>
                     <div className={style.homeProjAndResume}>

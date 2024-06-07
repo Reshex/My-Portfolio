@@ -16,7 +16,8 @@ function About() {
                     </div>
                     <div className={style.aboutSnapshot}>
                         <p>
-                            <p>Skills Snapshot:</p>
+                            <span>Skills Snapshot:</span>
+                            <br />
                             👨‍💻 Frontend: I specialize in creating captivating user interfaces using React.js, HTML5, CSS, and TypeScript. I believe in designing websites and apps that not only look great but also provide a seamless user experience.
                             <br />
                             🔭 Backend: With Node.js and sometimes Python, I focus on building strong foundations to support frontend functionality. From crafting efficient APIs to optimizing performance, I'm dedicated to delivering scalable solutions.

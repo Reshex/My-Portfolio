@@ -1,5 +1,7 @@
 1. Add transition for router
 2. Add projects to projects and skills
 3. Add resume to download
-4. Fix arrow ao next page
+4. Fix arrow scss and functionality
 5. Fix icons and add scss for projects and skills
+6. add particles animation on home page
+7. make everything responsive 
