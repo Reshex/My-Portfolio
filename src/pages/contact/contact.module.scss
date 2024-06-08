@@ -1,3 +1,5 @@
+@import "../../scssUtils/fadeInAnimation.scss";
+
 .contactContainer {
   display: flex;
   justify-content: center;
@@ -12,6 +14,7 @@
 
     .contactTitle {
       text-align: center;
+      animation: fadeIn 1.5s ease;
 
       h1 {
         font-size: 11vh;
@@ -25,6 +28,7 @@
         font-weight: 600;
         color: #f1f1f1;
         text-shadow: 0px 0px 5px #5c5af7, 0px 0px 10px #5052ee, 0px 0px 10px #477beb, 0px 0px 20px #b393d3;
+        animation: fadeIn 4s ease;
       }
     }
 
@@ -32,6 +36,7 @@
       display: flex;
       justify-content: center;
       margin-top: 20px;
+      animation: fadeIn 6s ease;
 
       a {
         display: flex;
@@ -41,12 +46,12 @@
         margin-bottom: 1vw;
         color: #fff;
         font-size: 4vw;
-        transition: color 0.3s ease, transform 0.3s ease; /* Transition for color and transform */
+        transition: color 0.3s ease, transform 0.3s ease;
         margin: 0 10px;
 
         &:hover {
-          color: #895eec; 
-          transform: scale(1.5); 
+          color: #895eec;
+          transform: scale(1.5);
         }
       }
     }
