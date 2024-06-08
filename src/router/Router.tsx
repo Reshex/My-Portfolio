@@ -5,15 +5,16 @@ import ProjectsAndSkills from "../pages/projectsAndSkills/ProjectsAndSkills";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
 
+const routes = [
+    { path: "/", element: <Home /> },
+    { path: "/about", element: <About /> },
+    { path: "/projectsAndSkills", element: <ProjectsAndSkills /> },
+    { path: "/contact", element: <Contact /> }
+]
+
 const Router = createBrowserRouter([{
     path: "/",
     element: <NavbarWrapper />,
-    children: [
-        { path: "/", element: <Home /> },
-        { path: "/about", element: <About /> },
-        { path: "/projectsAndSkills", element: <ProjectsAndSkills /> },
-        { path: "/contact", element: <Contact /> }
-    ]
+    children: routes
 }])
-
 export default Router
