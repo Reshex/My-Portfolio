@@ -27,7 +27,7 @@
     animation: fadeIn 1.5s ease;
 
     h1 {
-      font-size: 11vh;
+      font-size: 4vw;
       font-weight: 600;
       color: #fdfdfe;
       text-shadow: 0px 0px 5px #7664db, 0px 0px 10px #8b48cf, 0px 0px 10px #b393d3, 0px 0px 20px #b393d3;
@@ -35,7 +35,7 @@
 
     p {
       animation: fadeIn 3s ease;
-      font-size: 3vh;
+      font-size: 1.5vw;
       font-weight: 600;
       color: #f1f1f1;
       text-shadow: 0px 0px 5px #5c5af7, 0px 0px 10px #5052ee, 0px 0px 10px #477beb, 0px 0px 20px #b393d3;
@@ -54,7 +54,7 @@
       color: #ffffff;
       font-size: 0.8vw;
       font-weight: 600;
-      height: 5.5vh;
+      height: 6vh;
       padding: 0 1.6rem;
       text-shadow: rgba(0, 0, 0, 0.25) 0 12px 8px;
       transition: 0.8s;
@@ -64,6 +64,25 @@
     button:hover {
       box-shadow: rgb(137, 86, 255) 0 1px 30px;
       transition-duration: 0.5s;
+    }
+  }
+}
+
+@media all and (max-width: 500px) {
+  .homeWrapper {
+    .homeTitle {
+      h1 {
+        font-size: 5vw;
+      }
+      p {
+        font-size: 3vw;
+      }
+    }
+    .homeProjAndResume {
+      button {
+        height: 3vh;
+        font-size: 2vw;
+      }
     }
   }
 }

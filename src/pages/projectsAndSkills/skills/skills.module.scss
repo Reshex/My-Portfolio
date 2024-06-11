@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
 
 @keyframes load {
   0% {
@@ -17,6 +17,7 @@
   padding: 0;
   text-align: center;
   width: 100%;
+  font-family: "Montserrat", sans-serif;
 
   & > li {
     transition: 0.5s;
@@ -32,7 +33,6 @@
       position: absolute;
       width: 100%;
       bottom: 0;
-      font-weight: 600;
       font-weight: 600;
       color: #fdfdfe;
       text-shadow: 0px 0px 5px #7664db, 0px 0px 10px #8b48cf, 0px 0px 10px #b393d3, 0px 0px 20px #b393d3;
@@ -75,7 +75,7 @@
       opacity: 0.9;
       transition: 0.5s;
       animation: load 3.5s;
-      animation-delay: 1.5s;
+      animation-delay: 2.5s;
     }
   }
 }
@@ -100,5 +100,77 @@
   &:after {
     top: 1.25rem;
     font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 1020px) {
+  .progress {
+    svg {
+      width: 4rem;
+      height: 7rem;
+    }
+    & > li {
+      margin: 0.5rem; 
+      &:before {
+        font-size: 0.8rem; 
+      }
+      &:after {
+        margin-top: -1.2vh;
+        font-size: 1rem;
+      }
+    }
+  }
+  .smallerSkillSet > li {
+    svg {
+      width: 2.5rem;
+      height: 3rem;
+      &:nth-child(2) path {
+        stroke-width: 12.5;
+      }
+    }
+    &:before {
+      bottom: -1.5rem;
+    }
+    &:after {
+      top: 1.7rem;
+      font-size: 1rem;
+      font-size: 0.7rem;
+    }
+  }
+}
+
+@media all and (max-width: 700px) {
+  .progress {
+    svg {
+      width: 3rem;
+      height: 6rem;
+    }
+    & > li {
+      margin: 0.25rem; 
+      &:before {
+        font-size: 0.7rem; 
+      }
+      &:after {
+        margin-top: -2.5vh;
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .smallerSkillSet > li {
+    svg {
+      width: 2.5rem;
+      height: 3rem;
+      &:nth-child(2) path {
+        stroke-width: 12.5;
+      }
+    }
+    &:before {
+      bottom: -1.1rem;
+    }
+    &:after {
+      top: 2.3rem;
+      font-size: 1rem;
+      font-size: 0.7rem;
+    }
   }
 }

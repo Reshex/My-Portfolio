@@ -10,47 +10,177 @@ button {
   border-style: none;
   box-sizing: border-box;
   color: #ffffff;
-  font-size: 0.8vw;
+  font-size: 0.9vw;
   font-weight: 600;
   height: 5.5vh;
-  padding: 0 1.6rem;
-  text-shadow: rgba(0, 0, 0, 0.25) 0 12px 8px;
-  transition: 0.8s;
+  padding: 0 1.6vw;
   margin-right: 0.4vw;
+  font-family: "Montserrat", sans-serif;
 }
 
 button:hover {
-  box-shadow: rgb(255, 254, 254) 0 1px 80px;
+  box-shadow: rgb(255, 254, 254) 0 0.1vh 4vw;
   transition-duration: 0.5s;
 }
 
 .projects {
-  width: 38vw;
-  height: 52vh;
+  .project1,
+  .project2,
+  .project3,
+  .project4 {
+    position: fixed;
+    border-radius: 50%;
+    height: 15vh;
+    width: 7vw;
+    transition: 0.5s;
+  }
 
   .project1 {
-    position: relative;
-    border-radius: 360px;
     background-color: rgb(255, 255, 252);
-    height: 140px;
-    width: 140px;
-    top: 12vh;
+    left: 30.5vw;
+    top: 25vh;
   }
+
   .project2 {
-    position: relative;
-    border-radius: 360px;
     background-color: rgb(21, 197, 250);
-    height: 140px;
-    width: 140px;
-    left: 23vw;
-    top: 20vh;
+    right: 30vw;
+    top: 25vh;
   }
+
   .project3 {
-    position: relative;
-    border-radius: 360px;
     background-color: rgb(0, 255, 157);
-    height: 140px;
-    width: 140px;
-    top: 1vh;
+    top: 4vh;
+    right: 40vw;
+  }
+
+  .project4 {
+    background-color: rgb(184, 245, 105);
+    top: 4.5vh;
+    left: 40vw;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .projects {
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+      height: 12vh;
+      width: 8vw;
+    }
+    .project1 {
+      left: 28.5vw;
+      top: 25vh;
+    }
+
+    .project2 {
+      right: 28.5vw;
+      top: 25vh;
+    }
+
+    .project3 {
+      top: 9vh;
+      right: 40vw;
+    }
+
+    .project4 {
+      top: 9.2vh;
+      left: 40vw;
+    }
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .projects {
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+      font-size: 1.2vw;
+      height: 12vh;
+      width: 11vw;
+    }
+    .project1 {
+      left: 18vw;
+      top: 25vh;
+    }
+
+    .project2 {
+      right: 18vw;
+      top: 25vh;
+    }
+
+    .project3 {
+      top: 9vh;
+      right: 35vw;
+    }
+
+    .project4 {
+      top: 9.2vh;
+      left: 35vw;
+    }
+  }
+}
+@media all and (max-width: 850px) {
+  .projects {
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+      font-size: 1.2vw;
+      height: 11vh;
+      width: 13vw;
+    }
+    .project1 {
+      left: 9vw;
+      top: 25vh;
+    }
+
+    .project2 {
+      right: 9vw;
+      top: 25vh;
+    }
+
+    .project3 {
+      top: 9vh;
+      right: 32vw;
+    }
+
+    .project4 {
+      top: 9.2vh;
+      left: 32vw;
+    }
+  }
+}
+@media all and (max-width: 550px) {
+  .projects {
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+      font-size: 1.9vw;
+      height: 8vh;
+      width: 15vw;
+    }
+    .project1 {
+      left: 9vw;
+      top: 17vh;
+    }
+
+    .project2 {
+      right: 9vw;
+      top: 17vh;
+    }
+
+    .project3 {
+      top: 9vh;
+      right: 32vw;
+    }
+
+    .project4 {
+      top: 9.2vh;
+      left: 32vw;
+    }
   }
 }

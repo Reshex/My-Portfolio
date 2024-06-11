@@ -1,8 +1,7 @@
 1. Add transition for router - completed
-2. Add projects to projects and skills
-3. Add resume to download
+2. Add projects to projects and skills - completed
+3. Add resume to download - completed
 4. Fix arrow scss and functionality -completed
-5. Fix icons and add scss for projects and skills
-6. add particles animation on home page
+5. Fix icons and add scss for projects and skills - completed
 7. make everything responsive 
-8. modular the codes
+8. modular the code

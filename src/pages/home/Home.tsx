@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import style from "../home/home.module.scss"
+import pdfResume from "../../assets/Resume/CV Bar.pdf"
 
 function Home() {
     const navigate = useNavigate()
@@ -8,6 +9,15 @@ function Home() {
         if (event.target) {
             navigate("/projectsAndSkills")
         }
+    }
+
+    function downloadResume() {
+        const downloadLink = document.createElement("a") as HTMLAnchorElement;
+        downloadLink.href = pdfResume;
+        downloadLink.download = "Bar's CV";
+        document.body.appendChild(downloadLink)
+        downloadLink.click()
+        document.body.removeChild(downloadLink)
     }
 
     return (
@@ -21,7 +31,7 @@ function Home() {
                     </div>
                     <div className={style.homeProjAndResume}>
                         <button onClick={navigateProjects}>Check My Projects</button>
-                        <button>Download My Resume</button>
+                        <button onClick={downloadResume}>Download My Resume</button>
                     </div>
                 </div>
             </div>

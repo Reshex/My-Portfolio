@@ -16,8 +16,8 @@ function Skills() {
     const mainSkills: Skill[] = [
         { name: "Node.js", percent: 80, Icon: FaGitSquare },
         { name: "HTML5", percent: 85, Icon: FaHtml5 },
-        { name: "TypeScript", percent: 80, Icon: BiLogoTypescript },
-        { name: "JavaScript", percent: 85, Icon: IoLogoJavascript },
+        { name: "TScript", percent: 80, Icon: BiLogoTypescript },
+        { name: "JScript", percent: 85, Icon: IoLogoJavascript },
         { name: "React", percent: 85, Icon: FaReact },
         { name: "CSS", percent: 70, Icon: FaCss3Alt }
     ];
@@ -25,7 +25,7 @@ function Skills() {
     const smallerSkills: Skill[] = [
         { name: "Mongo", percent: 80, Icon: SiMongodb },
         { name: "MySQL", percent: 60, Icon: DiMysql },
-        { name: "Bootstrap", percent: 75, Icon: FaBootstrap },
+        { name: "Btstrp", percent: 75, Icon: FaBootstrap },
         { name: "SASS", percent: 85, Icon: RiTailwindCssFill },
         { name: "Express", percent: 85, Icon: FaNpm },
         { name: "Git", percent: 80, Icon: FaGitSquare },
