@@ -3,5 +3,5 @@
 3. Add resume to download - completed
 4. Fix arrow scss and functionality -completed
 5. Fix icons and add scss for projects and skills - completed
-7. make everything responsive 
-8. modular the code
+7. make everything responsive - completed
+8. modular the code - completed
