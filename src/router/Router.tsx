@@ -6,14 +6,14 @@ import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
 
 const routes = [
-    { path: "/", element: <Home /> },
-    { path: "/about", element: <About /> },
-    { path: "/projectsAndSkills", element: <ProjectsAndSkills /> },
-    { path: "/contact", element: <Contact /> }
+    { path: "/My-Portfolio/", element: <Home /> },
+    { path: "/My-Portfolio/about", element: <About /> },
+    { path: "/My-Portfolio/projectsAndSkills", element: <ProjectsAndSkills /> },
+    { path: "/My-Portfolio/contact", element: <Contact /> }
 ]
 
 const Router = createBrowserRouter([{
-    path: "/",
+    path: "/My-Portfolio",
     element: <NavbarWrapper />,
     children: routes
 }])
