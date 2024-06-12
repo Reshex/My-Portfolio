@@ -1,10 +1,34 @@
 @import "../../scssUtils/fadeInAnimation.scss";
 
+$background-image: url("../../assets/imgs/sunset-mountain-synthwave-minimalist-digital-art-4k-wallpaper-uhdpaper.com-875@1@m.jpg");
+$main-color: #fdfdfe;
+$shadow-color-1: #7664db;
+$shadow-color-2: #8b48cf;
+$shadow-color-3: #b393d3;
+$title-font-size: 2vw;
+$title-font-size-medium: 3.5vw;
+$title-font-size-small: 6vw;
+$fade-in-duration-1: 1.5s;
+$fade-in-duration-2: 3.5s;
+$fade-in-duration-3: 5.5s;
+
+@mixin responsive($max-width, $title-font-size) {
+  @media all and (max-width: $max-width) {
+    .porjectAndSkillsContainer {
+      .porjectAndSkillsWrapper {
+        h1 {
+          font-size: $title-font-size;
+        }
+      }
+    }
+  }
+}
+
 .porjectAndSkillsContainer {
-  background-image: url("../../assets/imgs/sunset-mountain-synthwave-minimalist-digital-art-4k-wallpaper-uhdpaper.com-875@1@m.jpg");
+  background-image: $background-image;
   background-size: cover;
   background-position: center;
-  margin: 0, auto;
+  margin: 0 auto;
 
   .porjectAndSkillsWrapper {
     display: flex;
@@ -20,24 +44,27 @@
     align-content: center;
     position: fixed;
     margin-top: 35vh;
-    animation: fadeIn 1.5s ease;
+    animation: fadeIn $fade-in-duration-1 ease;
 
     h1 {
-      font-size: 2vw;
+      font-size: $title-font-size;
       font-weight: 600;
-      color: #fdfdfe;
-      text-shadow: 0px 0px 5px #7664db, 0px 0px 10px #8b48cf, 0px 0px 10px #b393d3, 0px 0px 20px #b393d3;
+      color: $main-color;
+      text-shadow: 0px 0px 5px $shadow-color-1, 0px 0px 10px $shadow-color-2, 0px 0px 10px $shadow-color-3,
+        0px 0px 20px $shadow-color-3;
       height: 50%;
     }
   }
 
   .projectsContainer {
-    animation: fadeIn 3.5s ease;
+    animation: fadeIn $fade-in-duration-2 ease;
   }
 
   .progressContainer {
     margin-top: 65vh;
-    animation: fadeIn 5.5s ease;
+    animation: fadeIn $fade-in-duration-3 ease;
   }
 }
 
+@include responsive(1000px, $title-font-size-medium);
+@include responsive(550px, $title-font-size-small);

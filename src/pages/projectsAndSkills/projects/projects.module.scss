@@ -1,29 +1,34 @@
-button {
-  cursor: pointer;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(204, 67, 193, 1) 0%,
-    rgba(154, 67, 204, 0.8) 50%,
-    rgba(149, 69, 181, 0.6) 100%
-  );
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #ffffff;
-  font-size: 0.9vw;
-  font-weight: 600;
-  height: 5.5vh;
-  padding: 0 1.6vw;
-  margin-right: 0.4vw;
-  font-family: "Montserrat", sans-serif;
-}
-
-button:hover {
-  box-shadow: rgb(255, 254, 254) 0 0.1vh 4vw;
-  transition-duration: 0.5s;
-}
-
 .projects {
+  a {
+    cursor: pointer;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(204, 67, 193, 1) 0%,
+      rgba(154, 67, 204, 0.8) 50%,
+      rgba(149, 69, 181, 0.6) 100%
+    );
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 0.9vw;
+    font-weight: 600;
+    height: 5.5vh;
+    padding: 0 1.6vw;
+    margin-right: 0.4vw;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  a:hover {
+    box-shadow: rgb(255, 254, 254) 0 0.1vh 4vw;
+    transition-duration: 0.5s;
+  }
+
   .project1,
   .project2,
   .project3,
@@ -33,6 +38,9 @@ button:hover {
     height: 15vh;
     width: 7vw;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .project1 {
@@ -60,6 +68,8 @@ button:hover {
   }
 }
 
+
+
 @media all and (max-width: 1400px) {
   .projects {
     .project1,
@@ -70,23 +80,23 @@ button:hover {
       width: 8vw;
     }
     .project1 {
-      left: 28.5vw;
+      left: 26.5vw;
       top: 25vh;
     }
 
     .project2 {
-      right: 28.5vw;
+      right: 26.5vw;
       top: 25vh;
     }
 
     .project3 {
       top: 9vh;
-      right: 40vw;
+      right: 37vw;
     }
 
     .project4 {
       top: 9.2vh;
-      left: 40vw;
+      left: 37vw;
     }
   }
 }
@@ -122,23 +132,24 @@ button:hover {
     }
   }
 }
+
 @media all and (max-width: 850px) {
   .projects {
     .project1,
     .project2,
     .project3,
     .project4 {
-      font-size: 1.2vw;
+      font-size: 1.4vw;
       height: 11vh;
-      width: 13vw;
+      width: 14vw;
     }
     .project1 {
-      left: 9vw;
+      left: 7vw;
       top: 25vh;
     }
 
     .project2 {
-      right: 9vw;
+      right: 6.7vw;
       top: 25vh;
     }
 
@@ -153,6 +164,7 @@ button:hover {
     }
   }
 }
+
 @media all and (max-width: 550px) {
   .projects {
     .project1,
@@ -160,26 +172,26 @@ button:hover {
     .project3,
     .project4 {
       font-size: 1.9vw;
-      height: 8vh;
-      width: 15vw;
+      height: 10vh;
+      width: 16vw;
     }
     .project1 {
       left: 9vw;
-      top: 17vh;
+      top: 19vh;
     }
 
     .project2 {
       right: 9vw;
-      top: 17vh;
+      top: 19vh;
     }
 
     .project3 {
-      top: 9vh;
+      top: 11vh;
       right: 32vw;
     }
 
     .project4 {
-      top: 9.2vh;
+      top: 11.2vh;
       left: 32vw;
     }
   }

@@ -1,12 +1,52 @@
 @import "../../scssUtils/fadeInAnimation.scss";
 
+$background-image: url("/src/assets/imgs/Futuristic_sci_fi_banner_background_with_modern_wireframe_terrain_design_2402.jpg");
+$main-color: #fdfdfe;
+$secondary-color: #f1f1f1;
+$button-bg-gradient: linear-gradient(92.88deg, #5643cc 9.16%, #5643cc 43.89%, #455eb5 64.72%);
+$button-hover-shadow: rgb(137, 86, 255) 0 1px 30px;
+$shadow-color-1: #7664db;
+$shadow-color-2: #8b48cf;
+$shadow-color-3: #b393d3;
+$shadow-color-4: #5c5af7;
+$shadow-color-5: #5052ee;
+$shadow-color-6: #477beb;
+$title-font-size: 4vw;
+$text-font-size: 1.5vw;
+$button-font-size: 0.8vw;
+$line-height: 1.5;
+$fade-in-duration-1: 1.5s;
+$fade-in-duration-2: 3s;
+$fade-in-duration-3: 4.5s;
+
+@mixin responsive($max-width, $title-font-size, $text-font-size, $button-height, $button-font-size) {
+  @media all and (max-width: $max-width) {
+    .homeWrapper {
+      .homeTitle {
+        h1 {
+          font-size: $title-font-size;
+        }
+        p {
+          font-size: $text-font-size;
+        }
+      }
+      .homeProjAndResume {
+        button {
+          height: $button-height;
+          font-size: $button-font-size;
+        }
+      }
+    }
+  }
+}
+
 .homeWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background-image: url("/src/assets/imgs/Futuristic_sci_fi_banner_background_with_modern_wireframe_terrain_design_2402.jpg");
+  background-image: $background-image;
   background-size: cover;
   background-position: center;
 
@@ -24,65 +64,52 @@
     align-items: center;
     flex-direction: column;
     gap: 1vh;
-    animation: fadeIn 1.5s ease;
+    animation: fadeIn $fade-in-duration-1 ease;
 
     h1 {
-      font-size: 4vw;
+      font-size: $title-font-size;
       font-weight: 600;
-      color: #fdfdfe;
-      text-shadow: 0px 0px 5px #7664db, 0px 0px 10px #8b48cf, 0px 0px 10px #b393d3, 0px 0px 20px #b393d3;
+      color: $main-color;
+      text-shadow: 0px 0px 5px $shadow-color-1, 0px 0px 10px $shadow-color-2, 0px 0px 10px $shadow-color-3,
+        0px 0px 20px $shadow-color-3;
     }
 
     p {
-      animation: fadeIn 3s ease;
-      font-size: 1.5vw;
+      animation: fadeIn $fade-in-duration-2 ease;
+      font-size: $text-font-size;
       font-weight: 600;
-      color: #f1f1f1;
-      text-shadow: 0px 0px 5px #5c5af7, 0px 0px 10px #5052ee, 0px 0px 10px #477beb, 0px 0px 20px #b393d3;
+      color: $secondary-color;
+      text-shadow: 0px 0px 5px $shadow-color-4, 0px 0px 10px $shadow-color-5, 0px 0px 10px $shadow-color-6,
+        0px 0px 20px $shadow-color-3;
     }
   }
 
   .homeProjAndResume {
     margin-top: 2vh;
-    animation: fadeIn 4.5s ease;
+    animation: fadeIn $fade-in-duration-3 ease;
+
     button {
       cursor: pointer;
-      background-image: linear-gradient(92.88deg, #5643cc 9.16%, #5643cc 43.89%, #455eb5 64.72%);
+      background-image: $button-bg-gradient;
       border-radius: 8px;
       border-style: none;
       box-sizing: border-box;
       color: #ffffff;
-      font-size: 0.8vw;
+      font-size: $button-font-size;
       font-weight: 600;
       height: 6vh;
       padding: 0 1.6rem;
       text-shadow: rgba(0, 0, 0, 0.25) 0 12px 8px;
       transition: 0.8s;
       margin-right: 0.4vw;
-    }
 
-    button:hover {
-      box-shadow: rgb(137, 86, 255) 0 1px 30px;
-      transition-duration: 0.5s;
+      &:hover {
+        box-shadow: $button-hover-shadow;
+        transition-duration: 0.5s;
+      }
     }
   }
 }
 
-@media all and (max-width: 500px) {
-  .homeWrapper {
-    .homeTitle {
-      h1 {
-        font-size: 5vw;
-      }
-      p {
-        font-size: 3vw;
-      }
-    }
-    .homeProjAndResume {
-      button {
-        height: 3vh;
-        font-size: 2vw;
-      }
-    }
-  }
-}
+@include responsive(900px, 5vw, 3vw, 5vh, 2vw);
+@include responsive(500px, 5vw, 3vw, 3vh, 2vw);
