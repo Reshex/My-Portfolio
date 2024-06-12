@@ -174,3 +174,36 @@
     }
   }
 }
+@media all and (max-width: 500px) {
+  .progress svg {
+    width: 3rem;
+    height: 6rem;
+  }
+
+  .progress > li {
+    margin: 0.25rem;
+  }
+
+  .progress > li:before {
+    font-size: 0.6rem;
+  }
+
+  .progress > li:after {
+    margin-top: -2.5vh;
+    font-size: 0.8rem;
+  }
+
+  .smallerSkillSet > li svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .smallerSkillSet > li:before {
+    bottom: -1.7rem;
+  }
+
+  .smallerSkillSet > li:after {
+    top: 1.7rem;
+    font-size: 0.5rem;
+  }
+}

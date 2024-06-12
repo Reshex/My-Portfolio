@@ -23,7 +23,11 @@ $fade-in-duration-3: 4.5s;
   @media all and (max-width: $max-width) {
     .homeWrapper {
       .homeTitle {
+        margin-bottom: 1vh;
         h1 {
+          margin-bottom: 2vh;
+          max-width: 55vw;
+          text-align: center;
           font-size: $title-font-size;
         }
         p {
@@ -32,6 +36,7 @@ $fade-in-duration-3: 4.5s;
       }
       .homeProjAndResume {
         button {
+          margin-bottom: 12vh;
           height: $button-height;
           font-size: $button-font-size;
         }
@@ -111,5 +116,5 @@ $fade-in-duration-3: 4.5s;
   }
 }
 
-@include responsive(900px, 5vw, 3vw, 5vh, 2vw);
-@include responsive(500px, 5vw, 3vw, 3vh, 2vw);
+@include responsive(900px, 6vw, 4vw, 5vh, 2vw);
+@include responsive(500px, 7vw, 5vw, 6vh, 3vw);
