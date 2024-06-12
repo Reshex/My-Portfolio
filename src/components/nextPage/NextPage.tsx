@@ -4,7 +4,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import style from './nextPage.module.scss';
 
 function NextPage() {
-    const paths = ['/', '/about', '/projectsAndSkills', '/contact'];
+    const paths = ['/My-Portfolio/', '/My-Portfolio/about', '/My-Portfolio/projectsAndSkills', '/My-Portfolio/contact'];
     const [currentIndex, setCurrentIndex] = useState(0);
     const navigate = useNavigate();
     const location = useLocation();

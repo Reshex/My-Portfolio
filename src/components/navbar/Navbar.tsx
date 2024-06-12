@@ -13,10 +13,10 @@ function Navbar() {
                 </div>
                 <div className={style.navMenu}>
                     <div className={style.navMainMenu}>
-                        <Link to={"/"}><FontAwesomeIcon icon={faHome} /> <span>Home</span> </Link>
-                        <Link to={"/about"}> <FontAwesomeIcon icon={faBookOpenReader} /><span>About</span></Link>
-                        <Link to={"/projectsAndSkills"}> <FontAwesomeIcon icon={faToolbox} /><span>Projects & Skills</span></Link>
-                        <Link to={"/contact"}> <FontAwesomeIcon icon={faEnvelope} /><span>Contact</span></Link>
+                        <Link to={"/My-Portfolio/"}><FontAwesomeIcon icon={faHome} /> <span>Home</span> </Link>
+                        <Link to={"/My-Portfolio/about"}> <FontAwesomeIcon icon={faBookOpenReader} /><span>About</span></Link>
+                        <Link to={"/My-Portfolio/projectsAndSkills"}> <FontAwesomeIcon icon={faToolbox} /><span>Projects & Skills</span></Link>
+                        <Link to={"/My-Portfolio/contact"}> <FontAwesomeIcon icon={faEnvelope} /><span>Contact</span></Link>
                     </div>
                     <div className={style.navSocialMedia}>
                         <Link to={"https://www.linkedin.com/in/bar-abulher-20b22626b/"}><FontAwesomeIcon icon={faLinkedin} /><span>LinkedIn</span> </Link>
