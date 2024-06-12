@@ -9,7 +9,7 @@ function Navbar() {
         <>
             <div className={style.navWrapper}>
                 <div className={style.navHeader}>
-                    <img src="src\assets\imgs\image_2_584x584_100.png" />
+                    <img src=".\imgs\image_2_584x584_100.png" />
                 </div>
                 <div className={style.navMenu}>
                     <div className={style.navMainMenu}>

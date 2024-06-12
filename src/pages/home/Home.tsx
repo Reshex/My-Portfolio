@@ -7,7 +7,7 @@ function Home() {
 
     function navigateProjects(event: React.MouseEvent<HTMLButtonElement>) {
         if (event.target) {
-            navigate("/projectsAndSkills")
+            navigate("/My-Portfolio/projectsAndSkills")
         }
     }
 
