@@ -3,13 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faHome, faToolbox, faBookOpenReader } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
+import img from "../../assets/imgs/my_image.jpg"
 
 function Navbar() {
     return (
         <>
             <div className={style.navWrapper}>
                 <div className={style.navHeader}>
-                    <img src=".\assets\imgs\image_2_584x584_100.png" />
+                    <img src={img} />
                 </div>
                 <div className={style.navMenu}>
                     <div className={style.navMainMenu}>
