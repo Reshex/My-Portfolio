@@ -176,26 +176,29 @@
 }
 @media all and (max-width: 500px) {
   .progress svg {
-    width: 3rem;
+    width: 2.5rem;
     height: 6rem;
   }
 
   .progress > li {
-    margin: 0.25rem;
+    margin: 0.2rem;
   }
 
   .progress > li:before {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
 
   .progress > li:after {
     margin-top: -2.5vh;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
+  .smallerSkillSet  {
+    margin-bottom: 4vh;
+  }
   .smallerSkillSet > li svg {
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.9rem;
   }
 
   .smallerSkillSet > li:before {

@@ -20,15 +20,12 @@
       transition: 0.3s;
       width: 1.8vw;
       border-radius: 10px;
-    }
-    p {
-      font-size: 1vw;
-      margin-left: 0.3vw;
-      transition: 0.3s;
+      margin-left: -0.3vw;
     }
   }
   .navMenu {
     margin-top: 5vw;
+    margin-left: -0.3vw;
 
     .navMainMenu {
       display: flex;
@@ -46,6 +43,8 @@
     }
 
     .navSocialMedia {
+      display: flex;
+      flex-direction: column;
       margin-top: 19vw;
       transition: 0.3s;
       a {
@@ -101,4 +100,159 @@ a:hover {
   font-size: 2vw;
 }
 
+@media screen and (max-width: 1200px) {
+  .navWrapper {
+    width: 6vw;
+    .navHeader {
+      img {
+        width: 3vw;
+        margin-left: 0.3vw;
+      }
+    }
+    .navMenu {
+      margin-left: 0.5vw;
+      .navMainMenu {
+        margin-top: 7vh;
+        gap: 3vh;
+      }
 
+      .navSocialMedia {
+        gap: 3vh;
+
+        a {
+          font-size: 2vw;
+        }
+
+        a:hover {
+          font-size: 2.5vw;
+        }
+        margin-top: 22vw;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  .navWrapper:hover {
+    width: 10.8vw;
+    span {
+      font-size: 1.3vw;
+    }
+    .navHeader {
+      img {
+        width: 5vw;
+        margin-left: 1.3vw;
+      }
+    }
+  }
+
+  a {
+    font-size: 2vw;
+  }
+
+  a:hover {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navWrapper {
+    width: 8vw;
+    .navHeader {
+      img {
+        width: 4vw;
+        margin-left: 1vw;
+      }
+    }
+    .navMenu {
+      margin-left: 0.7vw;
+      .navMainMenu {
+        margin-top: 10vh;
+        gap: 4vh;
+      }
+
+      .navSocialMedia {
+        gap: 4vh;
+
+        a {
+          font-size: 3vw;
+        }
+
+        a:hover {
+          font-size: 3.5vw;
+        }
+        margin-top: 22vw;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  .navWrapper:hover {
+    width: 12vw;
+    .navHeader {
+      img {
+        width: 6vw;
+        margin-left: 2vw;
+      }
+    }
+  }
+
+  a {
+    font-size: 3vw;
+  }
+
+  a:hover {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navWrapper {
+    width: 9vw;
+    .navHeader {
+      img {
+        width: 5vw;
+      }
+    }
+    .navMenu {
+      margin-left: 1vw;
+      .navMainMenu {
+        margin-top: 14vh;
+        gap: 5vh;
+      }
+
+      .navSocialMedia {
+        gap: 5vh;
+
+        a {
+          font-size: 4vw;
+        }
+
+        a:hover {
+          font-size: 4.5vw;
+        }
+        margin-top: 22vw;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  .navWrapper:hover {
+    width: 14.5vw;
+    span {
+      font-size: 1.5vw;
+      margin-left: 0.7vw;
+    }
+    .navHeader {
+      img {
+        width: 7vw;
+        margin-left: 2vw;
+      }
+    }
+  }
+
+  a {
+    font-size: 4vw;
+  }
+
+  a:hover {
+    font-size: 4.5vw;
+  }
+}

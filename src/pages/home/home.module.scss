@@ -80,6 +80,8 @@ $fade-in-duration-3: 4.5s;
     }
 
     p {
+      text-align: center;
+      width: 80vw;
       animation: fadeIn $fade-in-duration-2 ease;
       font-size: $text-font-size;
       font-weight: 600;
@@ -117,4 +119,4 @@ $fade-in-duration-3: 4.5s;
 }
 
 @include responsive(900px, 6vw, 4vw, 5vh, 2vw);
-@include responsive(500px, 7vw, 5vw, 6vh, 3vw);
+@include responsive(500px, 7vw, 5vw, 6vh, 2vw);

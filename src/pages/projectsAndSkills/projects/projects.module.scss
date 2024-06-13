@@ -70,8 +70,6 @@
   }
 }
 
-
-
 @media all and (max-width: 1400px) {
   .projects {
     .project1,
@@ -146,13 +144,44 @@
       width: 14vw;
     }
     .project1 {
-      left: 7vw;
+      left: 13vw;
       top: 25vh;
     }
 
     .project2 {
-      right: 6.7vw;
+      right: 13vw;
       top: 25vh;
+    }
+
+    .project3 {
+      top: 9vh;
+      right: 32vw;
+    }
+
+    .project4 {
+      top: 9.2vh;
+      left: 32vw;
+    }
+  }
+}
+@media all and (max-width: 700px) {
+  .projects {
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+      font-size: 1.4vw;
+      height: 11vh;
+      width: 14vw;
+    }
+    .project1 {
+      left: 13vw;
+      top: 20vh;
+    }
+
+    .project2 {
+      right: 13vw;
+      top: 20vh;
     }
 
     .project3 {
@@ -174,27 +203,27 @@
     .project3,
     .project4 {
       font-size: 1.9vw;
-      height: 10vh;
-      width: 16vw;
+      height: 9vh;
+      width: 15vw;
     }
     .project1 {
-      left: 9vw;
-      top: 19vh;
+      left: 17vw;
+      top: 15vh;
     }
 
     .project2 {
-      right: 9vw;
-      top: 19vh;
+      right: 17vw;
+      top: 15vh;
     }
 
     .project3 {
+      right: 34vw;
       top: 11vh;
-      right: 32vw;
     }
 
     .project4 {
+      left: 34vw;
       top: 11.2vh;
-      left: 32vw;
     }
   }
 }
