@@ -91,5 +91,5 @@ $fade-in-duration-3: 8s;
 @include responsive(1000px, 4vw, 1.3vw);
 @include responsive(850px, 3.5vw, 1.52vw);
 @include responsive(700px, 4vw, 1.61vw);
-@include responsive(500px, 5vw, 1.98vw);
-@include responsive(420px, 7vw, 2.65vw);
+@include responsive(500px, 5vw, 2.5vw);
+@include responsive(420px, 7vw, 2.6vw);
