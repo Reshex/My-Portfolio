@@ -205,54 +205,25 @@ a:hover {
 }
 @media screen and (max-width: 500px) {
   .navWrapper {
-    width: 9vw;
-    .navHeader {
-      img {
-        width: 5vw;
-      }
-    }
-    .navMenu {
-      margin-left: 1vw;
-      .navMainMenu {
-        margin-top: 14vh;
-        gap: 5vh;
-      }
-
-      .navSocialMedia {
-        gap: 5vh;
-
-        a {
-          font-size: 4vw;
-        }
-
-        a:hover {
-          font-size: 4.5vw;
-        }
-        margin-top: 22vw;
-        transition: 0.3s;
-      }
-    }
+    opacity: 50%;
   }
-
   .navWrapper:hover {
-    width: 14.5vw;
+    width: 8vw;
+    opacity: 1;
     span {
-      font-size: 1.5vw;
-      margin-left: 0.7vw;
+      display: none;
     }
-    .navHeader {
-      img {
-        width: 7vw;
-        margin-left: 2vw;
-      }
+    .navHeader img {
+      width: 4vw;
+      margin-left: 1vw;
     }
-  }
-
-  a {
-    font-size: 4vw;
+    .navSocialMedia {
+      margin-top: 22vw;
+    }
   }
 
   a:hover {
-    font-size: 4.5vw;
+    color: #895eec;
+    font-size: 3.5vw;
   }
 }

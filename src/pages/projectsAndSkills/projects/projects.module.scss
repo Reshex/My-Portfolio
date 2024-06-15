@@ -254,3 +254,34 @@
     }
   }
 }
+@media all and (max-width: 450px) {
+  .projects {
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+      font-size: 1.9vw;
+      height: 65px;
+      width: 65px;
+    }
+    .project1 {
+      left: 15vw;
+      top: 17vh;
+    }
+
+    .project2 {
+      right: 15vw;
+      top: 17vh;
+    }
+
+    .project3 {
+      right: 33vw;
+      top: 13vh;
+    }
+
+    .project4 {
+      left: 33vw;
+      top: 13.2vh;
+    }
+  }
+}
