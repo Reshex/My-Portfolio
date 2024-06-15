@@ -131,3 +131,4 @@ $fade-in-duration-3: 6s;
 @include responsive(1000px, 32vh, 5.5vw, 3vw, 6vw, 4vh, 40vw);
 @include responsive(700px, 30vh, 7vw, 3.5vw, 8vw, 6vh, 40vw);
 @include responsive(500px, 30vh, 9vw, 4.5vw, 10vw, 6vh, 50vw);
+@include responsive(450px, 30vh, 6vw, 2.5vw, 6vw, 6vh, 50vw);
