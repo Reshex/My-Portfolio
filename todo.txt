@@ -5,3 +5,6 @@
 5. Fix icons and add scss for projects and skills - completed
 7. make everything responsive - completed
 8. modular the code - completed
+skills media adjastment
+navbar media adjacetment opacity and no hover
+min height media adjacetment

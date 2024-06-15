@@ -37,8 +37,8 @@
   .project4 {
     position: fixed;
     border-radius: 50%;
-    height: 15vh;
-    width: 7vw;
+    height: 140px;
+    width: 140px;
     transition: 0.5s;
     display: flex;
     align-items: center;
@@ -47,13 +47,13 @@
 
   .project1 {
     background-color: rgb(255, 255, 252);
-    left: 30.5vw;
+    left: 28.5vw;
     top: 25vh;
   }
 
   .project2 {
     background-color: rgb(21, 197, 250);
-    right: 30vw;
+    right: 28vw;
     top: 25vh;
   }
 
@@ -70,14 +70,13 @@
   }
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1500px) {
   .projects {
     .project1,
     .project2,
     .project3,
     .project4 {
-      height: 12vh;
-      width: 8vw;
+      font-size: 1.2vw;
     }
     .project1 {
       left: 26.5vw;
@@ -101,15 +100,13 @@
   }
 }
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1300px) {
   .projects {
     .project1,
     .project2,
     .project3,
     .project4 {
       font-size: 1.2vw;
-      height: 12vh;
-      width: 11vw;
     }
     .project1 {
       left: 18vw;
@@ -133,15 +130,13 @@
   }
 }
 
-@media all and (max-width: 850px) {
+@media all and (max-width: 1100px) {
   .projects {
     .project1,
     .project2,
     .project3,
     .project4 {
       font-size: 1.4vw;
-      height: 11vh;
-      width: 14vw;
     }
     .project1 {
       left: 13vw;
@@ -151,6 +146,37 @@
     .project2 {
       right: 13vw;
       top: 25vh;
+    }
+
+    .project3 {
+      top: 6vh;
+      right: 32vw;
+    }
+
+    .project4 {
+      top: 6.2vh;
+      left: 32vw;
+    }
+  }
+}
+@media all and (max-width: 850px) {
+  .projects {
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+      font-size: 1.7vw;
+      height: 120px;
+      width: 120px;
+    }
+    .project1 {
+      left: 13vw;
+      top: 20vh;
+    }
+
+    .project2 {
+      right: 13vw;
+      top: 20vh;
     }
 
     .project3 {
@@ -164,34 +190,35 @@
     }
   }
 }
+
 @media all and (max-width: 700px) {
   .projects {
     .project1,
     .project2,
     .project3,
     .project4 {
-      font-size: 1.4vw;
-      height: 11vh;
-      width: 14vw;
+      font-size: 1.9vw;
+      height: 100px;
+      width: 100px;
     }
     .project1 {
-      left: 13vw;
-      top: 20vh;
+      left: 11vw;
+      top: 19vh;
     }
 
     .project2 {
-      right: 13vw;
-      top: 20vh;
+      right: 11vw;
+      top: 19vh;
     }
 
     .project3 {
-      top: 9vh;
-      right: 32vw;
+      right: 30vw;
+      top: 10vh;
     }
 
     .project4 {
-      top: 9.2vh;
-      left: 32vw;
+      left: 30vw;
+      top: 10.2vh;
     }
   }
 }
@@ -203,27 +230,27 @@
     .project3,
     .project4 {
       font-size: 1.9vw;
-      height: 9vh;
-      width: 15vw;
+      height: 80px;
+      width: 80px;
     }
     .project1 {
-      left: 17vw;
+      left: 15vw;
       top: 15vh;
     }
 
     .project2 {
-      right: 17vw;
+      right: 15vw;
       top: 15vh;
     }
 
     .project3 {
-      right: 34vw;
-      top: 11vh;
+      right: 33vw;
+      top: 10vh;
     }
 
     .project4 {
-      left: 34vw;
-      top: 11.2vh;
+      left: 33vw;
+      top: 10.2vh;
     }
   }
 }

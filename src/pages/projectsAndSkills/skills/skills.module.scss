@@ -59,8 +59,8 @@
     }
   }
   svg {
-    width: 7rem;
-    height: 10rem;
+    width: 5rem;
+    height: 6rem;
     &:nth-child(2) {
       position: absolute;
       left: 0;
@@ -76,6 +76,17 @@
       transition: 0.5s;
       animation: load 3.5s;
       animation-delay: 2.5s;
+    }
+  }
+  & > li {
+    margin: 1rem;
+    &:before {
+      margin-bottom: -2vh;
+      font-size: 1rem;
+    }
+    &:after {
+      margin-top: -3vh;
+      font-size: 1.5rem;
     }
   }
 }
@@ -96,9 +107,10 @@
   }
   &:before {
     bottom: -1.5rem;
+    margin-bottom: -0.5vh;
   }
   &:after {
-    top: 1.25rem;
+    top: 3rem;
     font-size: 1rem;
   }
 }
@@ -133,7 +145,6 @@
     }
     &:after {
       top: 1.7rem;
-      font-size: 1rem;
       font-size: 0.7rem;
     }
   }
@@ -186,6 +197,7 @@
 
   .progress > li:before {
     font-size: 0.5rem;
+    margin-bottom: 2vh;
   }
 
   .progress > li:after {
@@ -193,8 +205,8 @@
     font-size: 0.6rem;
   }
 
-  .smallerSkillSet  {
-    margin-bottom: 4vh;
+  .smallerSkillSet {
+    margin-top: 2vh;
   }
   .smallerSkillSet > li svg {
     width: 1.8rem;
